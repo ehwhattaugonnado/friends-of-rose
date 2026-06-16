@@ -1,0 +1,4 @@
+# Public Hellbreakers wiki — build/preview dependencies.
+# Material bundles the `search` and `tags` plugins; only awesome-pages is separate.
+mkdocs-material==9.7.6
+mkdocs-awesome-pages-plugin==2.10.1
