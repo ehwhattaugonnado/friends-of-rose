@@ -1,0 +1,266 @@
+/* ===========================================================================
+   The Hellbreakers Chronicle — "Gothic Infernal Fantasy" theme for MkDocs Material
+   ---------------------------------------------------------------------------
+   Design language: a dark indigo/charcoal "void" frames a bright parchment
+   reading card. Crimson + muted gold trim; infernal-orange interactive accents.
+   Cinzel Decorative (titles) / Cinzel (headings) / EB Garamond (body) /
+   Oswald (labels). Readability is the priority — ornament stays restrained.
+   Two schemes: "default" = Candlelight (parchment), "slate" = Midnight (dark read).
+   =========================================================================== */
+
+/* --- Scheme-independent tokens (surfaces that sit over the dark void) ------- */
+:root {
+  --hb-bone: #ECE4D3;        /* text/links placed over the dark void, both schemes */
+  --hb-bone-dim: #b7ad97;
+  --hb-gold: #c5a059;
+  --hb-gold-dim: #9c7d44;
+  --hb-ember: #ff5722;
+  --hb-void-1: #161021;
+  --hb-void-2: #281f3b;
+}
+
+/* --- Candlelight (light, default) ------------------------------------------ */
+[data-md-color-scheme="default"] {
+  --hb-parchment: #f4efe6;       /* reading surface */
+  --hb-parchment-2: #efe8da;
+  --hb-ink: #241f1b;             /* body text */
+  --hb-crimson: #8b0000;
+  --hb-crimson-deep: #660000;
+
+  --md-default-bg-color: #f4efe6;
+  --md-default-fg-color: #241f1b;
+  --md-default-fg-color--light: #6b5f52;
+  --md-default-fg-color--lighter: #9b8f80;
+  --md-default-fg-color--lightest: #d8cfbf;
+
+  --md-primary-fg-color: #221b33;
+  --md-primary-fg-color--light: #322847;
+  --md-primary-fg-color--dark: #160f22;
+  --md-primary-bg-color: #f4efe6;
+  --md-primary-bg-color--light: #d9cdb4;
+
+  --md-accent-fg-color: #ff5722;
+  --md-typeset-a-color: #8b0000;
+  --md-typeset-mark-color: rgba(255, 152, 0, .35);
+  --md-code-bg-color: #ece4d3;
+  --md-code-fg-color: #4a2b14;
+}
+
+/* --- Midnight (dark / slate) ----------------------------------------------- */
+[data-md-color-scheme="slate"] {
+  --hb-parchment: #221b2e;       /* dark reading surface */
+  --hb-parchment-2: #281f38;
+  --hb-ink: #e8e1d4;
+  --hb-crimson: #c8102e;
+  --hb-crimson-deep: #e0697a;
+
+  --md-default-bg-color: #221b2e;
+  --md-default-fg-color: #e8e1d4;
+  --md-default-fg-color--light: #c0b7cb;
+  --md-default-fg-color--lighter: #8a8299;
+  --md-default-fg-color--lightest: #4a4359;
+
+  --md-primary-fg-color: #160f22;
+  --md-primary-fg-color--light: #281f3b;
+  --md-primary-fg-color--dark: #0e0917;
+  --md-primary-bg-color: #f0e9da;
+
+  --md-accent-fg-color: #ff7043;
+  --md-typeset-a-color: #e6a14e;
+  --md-code-bg-color: #1a1426;
+  --md-code-fg-color: #e8c9a0;
+}
+
+/* --- The void (outer wrapper) ---------------------------------------------- */
+html { background: var(--hb-void-1); }   /* fallback so no surface ever flashes white */
+body {
+  background: radial-gradient(120% 80% at 50% -10%, var(--hb-void-2), var(--hb-void-1) 70%) fixed;
+}
+.md-main,
+.md-container { background: transparent; }
+
+/* --- Header: wrought-iron bar, gold underline ------------------------------ */
+.md-header {
+  background: linear-gradient(180deg, var(--md-primary-fg-color--dark), var(--md-primary-fg-color));
+  border-bottom: 2px solid var(--hb-gold);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, .55);
+}
+.md-header__title {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+.md-header__topic { color: var(--hb-bone); }
+
+/* --- Sidebars / navigation: parchment-bone text over the void -------------- */
+.md-nav { font-family: "Oswald", "Helvetica Neue", sans-serif; font-size: .72rem; }
+.md-nav__title { color: var(--hb-gold); letter-spacing: .05em; text-transform: uppercase; }
+.md-sidebar .md-nav__link { color: var(--hb-bone-dim); }
+.md-sidebar .md-nav__link:hover,
+.md-sidebar .md-nav__link:focus { color: var(--hb-ember); }
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+  color: var(--hb-gold) !important;
+  font-weight: 600;
+}
+.md-nav--primary .md-nav__title[for="__drawer"] {
+  background: var(--md-primary-fg-color--dark);
+  color: var(--hb-bone);
+}
+
+/* --- The parchment reading card -------------------------------------------- */
+.md-content {
+  background-color: var(--hb-parchment);
+  /* subtle paper grain */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  border: 1px solid var(--hb-gold);
+  border-radius: 4px;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .5);
+  margin: 1.1rem .6rem 2.2rem;
+}
+@media screen and (min-width: 76.25em) {
+  .md-content { margin: 1.4rem 1rem 2.4rem; }
+}
+.md-content__inner { padding-top: .8rem; }
+.md-content__inner::before { height: 0; }   /* kill Material's top spacer */
+
+/* --- Typography ------------------------------------------------------------ */
+.md-typeset {
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: .95rem;
+  line-height: 1.78;
+  color: var(--hb-ink);
+}
+.md-typeset h1 {
+  font-family: "Cinzel Decorative", "Cinzel", serif;
+  font-weight: 900;
+  font-size: 2.05rem;
+  line-height: 1.15;
+  color: var(--hb-crimson-deep);
+  text-align: center;
+  letter-spacing: .015em;
+  margin: .3rem 0 1rem;
+  padding-bottom: .55rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .35);
+  position: relative;
+}
+.md-typeset h1::after {
+  content: "";
+  display: block;
+  width: 160px;
+  margin: .55rem auto 0;
+  border-top: 2px solid var(--hb-gold);
+  box-shadow: 0 3px 0 -2px var(--hb-crimson);
+}
+.md-typeset h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: var(--hb-crimson-deep);
+  border-bottom: 1px solid var(--hb-gold);
+  padding-bottom: .25rem;
+  margin-top: 2.2rem;
+}
+.md-typeset h3 {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  color: var(--hb-crimson);
+}
+.md-typeset h4,
+.md-typeset h5 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: .03em;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- Links ----------------------------------------------------------------- */
+.md-typeset a {
+  color: var(--md-typeset-a-color);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(139, 0, 0, .35);
+  transition: color .15s, border-color .15s;
+}
+[data-md-color-scheme="slate"] .md-typeset a { border-bottom-color: rgba(230, 161, 78, .4); }
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: var(--hb-ember);
+  border-bottom-color: var(--hb-ember);
+}
+
+/* --- Ornamental divider (replaces plain <hr>) ------------------------------ */
+.md-typeset hr {
+  border: none;
+  height: 22px;
+  margin: 1.8rem 0;
+  background: center / 320px 22px no-repeat
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='22' viewBox='0 0 320 22'%3E%3Cline x1='10' y1='11' x2='138' y2='11' stroke='%23c5a059' stroke-width='1.4'/%3E%3Cline x1='182' y1='11' x2='310' y2='11' stroke='%23c5a059' stroke-width='1.4'/%3E%3Ccircle cx='148' cy='11' r='2.2' fill='%23c5a059'/%3E%3Ccircle cx='172' cy='11' r='2.2' fill='%23c5a059'/%3E%3Cpath d='M160 3 L168 11 L160 19 L152 11 Z' fill='%238b0000' stroke='%23c5a059' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+/* --- Blockquote (e.g. the session one-line summary) ------------------------ */
+.md-typeset blockquote {
+  border-left: 3px solid var(--hb-gold);
+  background: rgba(197, 160, 89, .1);
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+}
+
+/* --- Tables as stat blocks ------------------------------------------------- */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--hb-gold);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.md-typeset table:not([class]) th {
+  background: var(--hb-crimson-deep);
+  color: var(--hb-bone);
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+.md-typeset table:not([class]) tr:nth-child(even) td {
+  background: rgba(197, 160, 89, .08);
+}
+
+/* --- Admonitions / details as stat-block modules --------------------------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border: 1px solid var(--hb-gold);
+  border-left-width: .3rem;
+  border-radius: 3px;
+  background: var(--hb-parchment-2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .18);
+  font-size: .92rem;
+}
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  background: rgba(139, 0, 0, .1);
+  color: var(--hb-crimson-deep);
+}
+/* "info" = Field notes blocks → crimson */
+.md-typeset .admonition.info { border-left-color: var(--hb-crimson); }
+.md-typeset .info > .admonition-title { background: rgba(139, 0, 0, .14); }
+.md-typeset .info > .admonition-title::before { background-color: var(--hb-crimson); }
+/* "tip" = the home "Where the party is now" banner → ember */
+.md-typeset .admonition.tip { border-left-color: var(--hb-ember); }
+.md-typeset .tip > .admonition-title { background: rgba(255, 87, 34, .14); color: #8a3010; }
+.md-typeset .tip > .admonition-title::before { background-color: var(--hb-ember); }
+/* dark scheme: lift admonition title text off the tinted bars for contrast */
+[data-md-color-scheme="slate"] .md-typeset .tip > .admonition-title { color: #ff9e6b; }
+[data-md-color-scheme="slate"] .md-typeset .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset summary { color: #e9b27a; }
+
+/* --- Footer ---------------------------------------------------------------- */
+.md-footer { background: var(--md-primary-fg-color--dark); }
+.md-footer-meta { background: var(--hb-void-1); border-top: 1px solid var(--hb-gold-dim); }
+
+/* --- Search ---------------------------------------------------------------- */
+.md-search__input { font-family: "Oswald", sans-serif; }
+[data-md-color-scheme="default"] .md-search__form { background: rgba(255, 255, 255, .12); }
+
+/* --- Misc polish ----------------------------------------------------------- */
+.md-typeset :is(h2, h3) code { color: inherit; }
+.md-typeset .md-content__button { color: var(--hb-gold); }

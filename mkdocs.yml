@@ -4,9 +4,13 @@ site_description: "A player-facing wiki and running log for the Hellbreakers cam
 # NOTE: site_url is intentionally NOT set. Material only emits a sitemap.xml when
 # site_url is configured, and this site is "public but obscured" (noindex, no sitemap).
 
+extra_css:
+  - assets/stylesheets/hellbreakers.css
+
 theme:
   name: material
   custom_dir: overrides
+  font: false   # fonts loaded in overrides/main.html (Cinzel / EB Garamond / Oswald)
   features:
     - navigation.sections
     - navigation.indexes
@@ -20,18 +24,18 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
-      accent: deep orange
+      primary: custom   # palette defined in hellbreakers.css
+      accent: custom
       toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
+        icon: material/candle
+        name: Into the night
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep purple
-      accent: deep orange
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode
+        name: Light the candles
 
 plugins:
   - search
