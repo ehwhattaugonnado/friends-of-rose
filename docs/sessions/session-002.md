@@ -10,6 +10,8 @@
 
 **NPCs:** Gertraud Mildenhall, Chelaxian Loyalist Leader, Chelaxian Loyalists, Street-smart halfling urchin (unnamed), Rhokrag, Maire Phelan
 
+**Transcript:** [Read the full session transcript →](transcripts/session-002.md)
+
 > The party scoped out the Everbloom Imports warehouse, sprang a falling-crate trap, fought off the Chelaxian loyalists holding it, rescued Gertraud Mildenhall, learned the expected supply shipment never arrived, and accepted Rhokrag's next mission — a riverboat ambush.
 
 ## Session Events

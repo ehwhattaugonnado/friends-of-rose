@@ -10,6 +10,8 @@
 
 **NPCs:** Ethran Howell, Brin, Utto, Maire Phelan, Rhokrag, Xerra Bluebottle, Cole Acton, Rabbit Dryden, Gertraud Mildenhall (missing)
 
+**Transcript:** [Read the full session transcript →](transcripts/session-001.md)
+
 > The party travels from Breachill to Saringallow with Ethran Howell, survives an undead bat ambush at the river crossing, joins the Hellbreakers, and accepts a mission to find the missing Gertraud Mildenhall at the Everbloom Imports warehouse.
 
 ## Session Events
