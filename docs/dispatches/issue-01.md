@@ -1,4 +1,6 @@
-# The Hellfire Dispatches — Issue 01
+# Issue 01 — The Spark in Isger
+
+[![Issue 01 — The Spark in Isger — full broadsheet](images/issue-01-broadsheet.png){ .hb-broadsheet }](images/issue-01-broadsheet.png)
 
 ## Issue One: The Spark in Isger
 

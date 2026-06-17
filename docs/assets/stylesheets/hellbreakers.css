@@ -253,6 +253,27 @@ body {
 [data-md-color-scheme="slate"] .md-typeset .admonition-title,
 [data-md-color-scheme="slate"] .md-typeset summary { color: #e9b27a; }
 
+/* --- Hellfire Dispatches broadsheet ---------------------------------------- */
+/* The full broadsheet PNG sits atop each dispatch page, framed like a pinned
+   newspaper and linked to itself so readers can open it at full resolution. */
+.md-typeset a:has(> .hb-broadsheet) { border-bottom: none; }
+.md-typeset .hb-broadsheet {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  margin: .4rem auto 1.4rem;
+  border: 1px solid var(--hb-gold);
+  border-radius: 3px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, .5);
+  background: #fff;   /* keep the paper white while it decodes */
+  cursor: zoom-in;
+  transition: box-shadow .15s, transform .15s;
+}
+.md-typeset .hb-broadsheet:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .6);
+  transform: translateY(-1px);
+}
+
 /* --- Footer ---------------------------------------------------------------- */
 .md-footer { background: var(--md-primary-fg-color--dark); }
 .md-footer-meta { background: var(--hb-void-1); border-top: 1px solid var(--hb-gold-dim); }
