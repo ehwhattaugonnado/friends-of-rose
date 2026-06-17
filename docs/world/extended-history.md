@@ -1,9 +1,5 @@
 # History of the Conflict in Isger — Extended
 
-_Expanded player-safe summary for characters at the start of Chapter 1._
-
-For immediate scene-one context, pair this with `md/campaign-start-briefing.md`.
-
 ## Introduction
 
 The conflict now unfolding in Isger is not a sudden uprising caused by one battle, one law, or one ambitious faction. It is the result of centuries of resentment, neglect, fear, and survival. To understand why the country stands on the edge of rebellion at the beginning of this campaign, it helps to understand how Isger came to be ruled, how its people were repeatedly asked to endure hardship alone, and why so many of them no longer believe the old order deserves unquestioned loyalty.

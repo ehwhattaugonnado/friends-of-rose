@@ -1,9 +1,5 @@
 # History of the Conflict in Isger
 
-_Player-safe summary for characters at the start of the campaign._
-
-For immediate scene-one context, pair this with `md/campaign-start-briefing.md`.
-
 ## The Long Shadow Over Isger
 
 Isger has spent most of its history under outside rule. Taldor conquered the land first, and Cheliax later annexed it and turned it into a vassal state. Since then, many Isgeri have felt their country exists to serve foreign rulers, merchants, and military planners rather than its own people. That feeling is strongest outside Elidir, where survival has often depended more on neighbors, temples, and stubborn local communities than on any distant authority.

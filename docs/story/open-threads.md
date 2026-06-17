@@ -5,7 +5,6 @@ Everything the party still has hanging — quests in progress and questions with
 ## Open Quests
 
 - Ambush a Chelaxian-flagged cargo ship up-river and bring it to the warehouse
-- Find out how the Chelaxian loyalists learned the location of the Everbloom Imports warehouse
 
 ## Open Questions
 

@@ -1,7 +1,5 @@
 # Campaign Start Briefing
 
-_Player-safe handout for characters at the start of Chapter 1. Pair this with one of the `history-of-the-conflict` summaries if you want more background on the wider war._
-
 ## The Short Version
 
 You begin this campaign as 1st-level, low-ranking members of the Hellbreakers League. You are not the movement's famous leaders or master spies. You are trusted enough to take assignments, useful enough to be worth sending into danger, and committed enough to have chosen a side in a country that is sliding toward open war.

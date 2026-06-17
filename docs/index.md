@@ -11,11 +11,10 @@ Welcome to the Hellbreakers campaign wiki. The Hellbreakers League fights to fre
     **Open quests:**
 
     - Ambush a Chelaxian-flagged cargo ship up-river and bring it to the warehouse
-    - Find out how the Chelaxian loyalists learned the location of the Everbloom Imports warehouse
 
 ## Explore
 
-- [**Story**](story/previously-on.md) — the dramatic recap and the running log.
+- [**Story**](story/previously-on.md) — the dramatic recap, the chapter-by-chapter chronicle, open threads, and the running log.
 - [**Sessions**](sessions/index.md) — detailed per-session summaries.
 - [**Codex**](codex/index.md) — an interlinked encyclopedia of people, places, and factions.
 - [**World**](world/history-of-the-conflict.md) — the wider conflict and setting.
