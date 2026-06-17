@@ -17,6 +17,6 @@ Welcome to the Hellbreakers campaign wiki. The Hellbreakers League fights to fre
 
 - [**Story**](story/previously-on.md) — the dramatic recap and the running log.
 - [**Sessions**](sessions/index.md) — detailed per-session summaries.
-- [**Codex**](codex/index.md) — people, places, factions, items, lore, and theories.
+- [**Codex**](codex/index.md) — an interlinked encyclopedia of people, places, and factions.
 - [**World**](world/history-of-the-conflict.md) — the wider conflict and setting.
 - [**Dispatches**](dispatches/index.md) — in-world war broadsheets from across the Inner Sea.
